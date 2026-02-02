@@ -1,0 +1,116 @@
+*{
+  box-sizing:border-box;
+  font-family:"Times New Roman",serif;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(to bottom, pink, hotpink);
+}
+
+.screen{
+  display:none;
+  width:100%;
+  height:100vh;
+  padding:20px;
+
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+
+  color:white;
+}
+
+.active{display:flex}
+
+/* BACKGROUNDS */
+
+#quiz{background:url("assets/bg1.jpg.jpg") center/cover}
+#landing{background:url("assets/bglanding.jpg") center/cover}
+#series{background:url("assets/bg1.jpg.jpg") center/cover}
+#result{background:url("assets/bglanded.jpg") center/cover}
+#letter{background:url("assets/bgletter.jpg") center/cover}
+
+/* DARK OVERLAY */
+
+.overlay{
+  background:rgba(0,0,0,0.6);
+  padding:25px;
+  border-radius:20px;
+  width:90%;
+  max-width:500px;
+}
+
+/* AVATAR */
+
+.avatar{
+  width:120px;
+  border-radius:50%;
+  margin-bottom:15px;
+}
+
+/* BUTTONS */
+
+button{
+  padding:14px 24px;
+  margin:8px;
+  border:none;
+  border-radius:25px;
+
+  background:#ff4d88;
+  color:white;
+
+  font-size:16px;
+  cursor:pointer;
+
+  transition:0.2s;
+}
+
+button:active{
+  box-shadow:0 0 20px pink;
+  transform:scale(0.95);
+}
+
+/* RUN */
+
+#noBtn,#finalNo{
+  position:relative;
+}
+
+/* SLIDE */
+
+.slide{
+  animation:slide .4s ease;
+}
+
+@keyframes slide{
+  from{transform:translateX(100%)}
+  to{transform:translateX(0)}
+}
+
+/* LETTER */
+
+.letter-box{
+  background:rgba(255,255,255,0.9);
+  color:black;
+
+  padding:25px;
+  border-radius:20px;
+  box-shadow: 0 0 25px pink;
+  max-width:500px;
+
+  font-style:italic;
+  line-height:1.7;
+}
+
+#closeBtn{
+  position:fixed;
+  top:15px;
+  right:15px;
+
+  background:red;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}

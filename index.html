@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Valentine ✈️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+<audio id="music" loop>
+ <source src="assets/music.mp3.mp3">
+</audio>
+
+
+<!-- INTRO -->
+<div class="screen active" id="intro">
+
+<img src="assets/avatar.png.jpg" class="avatar">
+
+<h2>Hey Adrian! 💖<br>Ready to take off? ✈️</h2>
+
+<div>
+ <button id="yesBtn">Yes</button>
+ <button id="noBtn">No</button>
+</div>
+
+</div>
+
+
+<!-- TURBULENCE -->
+<div class="screen" id="turbulence">
+
+<div class="overlay">
+
+<h2>Fasten your seatbelts ✈️</h2>
+<h3>(Better experience with headphones!)</h3>
+
+<h1 id="countdown">5</h1>
+
+</div>
+
+</div>
+
+
+<!-- QUIZ -->
+<div class="screen" id="quiz">
+
+<div class="overlay slide" id="quizBox">
+
+<h2 id="question"></h2>
+
+<div id="options"></div>
+
+<button onclick="goBack()">⬅ Back</button>
+
+</div>
+
+</div>
+
+
+<!-- READY LAND -->
+<div class="screen" id="landing">
+
+<div class="overlay">
+
+<h2>Almost there 💞<br>Ready to land? 🛬</h2>
+
+<button id="landYes">Yes</button>
+<button id="finalNo">No</button>
+
+</div>
+
+</div>
+
+
+<!-- TRUE/FALSE -->
+<div class="screen" id="series">
+
+<div class="overlay slide">
+
+<h2 id="seriesQ"></h2>
+
+<button onclick="nextSeries(true)">True</button>
+<button onclick="nextSeries(false)">False</button>
+
+</div>
+
+</div>
+
+
+<!-- RESULT -->
+<div class="screen" id="result">
+
+<div class="overlay">
+
+<h1>Congratulations!!! We've landed successfully 🎉</h1>
+
+<h2 id="score"></h2>
+
+<button onclick="showScreen('envelope')">
+ See the destination ✨
+</button>
+
+</div>
+
+</div>
+
+
+<!-- ENVELOPE -->
+<div class="screen" id="envelope">
+
+<img src="assets/envelope.png.jpg" id="envelopeImg">
+
+</div>
+
+
+<!-- LETTER -->
+<div class="screen" id="letter">
+
+<button id="closeBtn" onclick="closeLetter()">✖</button>
+
+<div class="letter-box">
+
+<h2>My Love 💌</h2>
+
+<p id="loveText">
+
+We’ve been talking for more than three months now, and honestly, my heart fell for you a long time ago. I just didn’t realize it at first. But lately, I’ve understood that I can’t hold it back anymore.
+
+Every moment with you reminds me that it’s okay to love, even when there’s a risk of getting hurt. Because love is beautiful. And I’m still one of those people who believe in fairytales — that one day, I’ll find my Boaz and become someone’s Ruth.
+
+It took me time to truly notice your way of showing love and interest. But the day I understood, I let my guard down. For me, it felt like love at first sight. I was scared, of course. Scared of falling for someone who might hurt me again. But today, I’m so grateful that I texted you that day.
+
+Sometimes, I regret not accepting when you wanted me to be yours. It feels like the world keeps trying to keep us apart. And honestly, I’m tired of waiting to see you. I miss being close to you, feeling your presence beside me, lying in your arms, resting on your chest, and kissing your lips.
+
+I love you so much that I feel uneasy when you’re busy… and unbelievably happy the moment your name appears on my screen. I know how risky this sounds. I know how vulnerable it makes me. But you’re a risk I’m willing to take.
+
+</p>
+<p>From the deepest feelings of my heart,</p>
+<p>To my dearest love,</p>
+<p>Yvette 💕</p>
+
+</div>
+
+</div>
+
+<script>
+(function(){
+ emailjs.init("rPhblt9E20Efp8I-s");
+})();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
