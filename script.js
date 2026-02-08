@@ -80,7 +80,7 @@ let questions=[
   o:["Losing you",
       "Hurting you",
       "Not being enough",
-      "Losing freedom"]},
+      "Being hurt"]},
 
  {q:"💞 What made you stay consistent with me these past months?",
   o:["Emotional connection",
@@ -96,7 +96,7 @@ let questions=[
 
  {q:"💞 If we face a serious problem, what would you do first?",
   o:["Talk and fix it",
-      "Pray / reflect",
+      "Reflect",
       "Take space then talk",
       "Avoid it"]},
 
@@ -118,7 +118,7 @@ let questions=[
       "Always communicate",
       "Grow together"]},
 
- {q:"💞 Why do you want me as your girlfriend — not just “a girl friend”?",
+ {q:"💞 Why do you choose me among all the others”?",
   o:["Emotional bond",
       "Compatibility",
       "My character",
@@ -291,3 +291,4 @@ function sendEmail(){
 
  });
 }
+
